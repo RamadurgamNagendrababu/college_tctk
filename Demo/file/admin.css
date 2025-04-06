@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    background: #f4f4f9;
+  }
+  
+  .admin-panel {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #1f1f2e;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #f44336;
+    margin-bottom: 30px;
+  }
+  
+  .menu {
+    list-style: none;
+  }
+  
+  .menu li {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .menu li:hover {
+    background: #3a3a5d;
+  }
+  
+  .menu i {
+    margin-right: 10px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 30px;
+    background: #ffffff;
+    overflow-y: auto;
+  }
+  
+  header h1 {
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background: #f44336;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  input, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0 20px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+  }
+  
+  button {
+    background: #03a9f4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+   

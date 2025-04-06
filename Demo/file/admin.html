@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="admin-panel">
+    <aside class="sidebar">
+      <h2 class="logo">College Admin</h2>
+      <ul class="menu">
+        <li onclick="showSection('dashboard')"><i class="ri-dashboard-line"></i> Dashboard</li>
+        <li onclick="showSection('chairman')"><i class="ri-user-3-line"></i> Chairman</li>
+        <li onclick="showSection('history')"><i class="ri-book-open-line"></i> History</li>
+        <li onclick="showSection('achievements')"><i class="ri-trophy-line"></i> Achievements</li>
+        <li onclick="showSection('faculty')"><i class="ri-team-line"></i> Faculty</li>
+        <li onclick="showSection('contact')"><i class="ri-mail-line"></i> Contacts</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Welcome, Admin</h1>
+      </header>
+
+      <section id="dashboard" class="section active">
+        <div class="cards">
+          <div class="card">Total Faculty <h3>28</h3></div>
+          <div class="card">Students <h3>500+</h3></div>
+          <div class="card">Messages <h3>12</h3></div>
+        </div>
+      </section>
+
+      <section id="chairman" class="section">
+        <h2>Chairman Info</h2>
+        <input type="text" placeholder="Chairman Name">
+        <input type="file">
+        <textarea placeholder="Chairman Description"></textarea>
+        <button>Save</button>
+      </section>
+
+      <section id="history" class="section">
+        <h2>College History</h2>
+        <input type="text" placeholder="Established Year">
+        <textarea placeholder="History Details"></textarea>
+        <button>Save</button>
+      </section>
+
+      <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <input type="text" placeholder="Title">
+        <textarea placeholder="Achievement Details"></textarea>
+        <button>Save</button>
+      </section>
+
+      <section id="faculty" class="section">
+        <h2>Add Faculty</h2>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Department">
+        <label><input type="checkbox"> Mark as Top Faculty</label>
+        <button>Save</button>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Messages</h2>
+        <p>(To be connected with backend later)</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

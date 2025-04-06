@@ -1,0 +1,484 @@
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero-text {
+    padding-right: 0;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+/* Reset */
+:root {
+    --primary-color: #2a9d8f;       /* Calm teal */
+    --secondary-color: #264653;     /* Deep navy */
+    --accent-color: #e9c46a;        /* Soft gold */
+    --background-light: #f4f4f4;    /* Light grey background */
+    --text-dark: #1e1e1e;           /* Dark text */
+    --text-light: #ffffff;          /* Light text */
+  }
+  
+  /* Example usage */
+  body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+  }
+  
+  nav {
+    background-color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--text-light);
+  }
+  
+  nav a.active-link {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+  
+  /* Top banner */
+  .top-banner {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Navbar */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ff4b2b;
+    letter-spacing: 1px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #ff4b2b;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav ul li a:hover {
+    color: #ff4b2b;
+  }
+  
+  .right-links button {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .right-links button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+  }
+  
+  /* Hero section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 80px;
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(210, 6, 6, 0.916);
+    margin: 50px auto;
+    max-width: 1200px;
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f13a15;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #e60e0e;
+  }
+  
+  .hero-img {
+    width: 450px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  
+/* College Info Section */
+.college-info {
+  padding: 100px 70px;
+  background: linear-gradient(to right, #f3f4f6, #ffffff);
+}
+
+.info-card {
+  margin: 0 auto 60px auto;
+  max-width: 1100px;
+  background: #df88ed;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✨ Hover Effect */
+.info-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background: #d46ce7; /* Slightly deeper shade for hover */
+}
+
+.info-card h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #e91e63;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-card p {
+  font-size: 22px;
+  color: #333;
+  line-height: 2;
+  text-align: justify;
+}
+
+  
+  
+  /* Stats Card */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 50px;
+    text-align: center;
+    padding: 60px 30px;
+    background: linear-gradient(to right, #65a2dc, #d56021);
+  }
+  
+  .stats div {
+    background: linear-gradient(to top right, #783a69, #ffffff);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(125, 168, 39, 0.881);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stats div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stats h3 {
+    font-size: 32px;
+    color: #d6336c;
+    margin-bottom: 10px;
+  }
+  
+  .stats p {
+    font-size: 20px;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  
+  /* Top Students Section */
+  .top-students {
+    padding: 60px 30px;
+    background: #a1a1e8;
+    text-align: center;
+  }
+  
+  .top-students h2 {
+    font-size: 32px;
+    color: #ff4b2b;
+    margin-bottom: 40px;
+  }
+  
+  .students-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .student-card {
+    background: #aa7c7c;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .student-card img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  /* Social Media Section */
+  .social-media {
+    padding: 50px 30px;
+    background: #bceae7;
+    text-align: center;
+  }
+  
+  .social-media h2 {
+    font-size: 28px;
+    color: #fe4a4a;
+    margin-bottom: 25px;
+  }
+  
+  .icons a img {
+    width: 45px;
+    margin: 0 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icons a img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* College Address Section */
+  .college-address {
+    padding: 60px 30px;
+    background: linear-gradient(to bottom right, #d79090, #f9f9f9);
+  }
+  
+  .college-address h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #ff4b2b;
+  }
+  
+  .address-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .address-text {
+    flex: 1;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    padding-right: 25px;
+  }
+  
+  .address-content img {
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Courses Offered Section */
+  .courses-offered {
+    padding: 50px 30px;
+    background-color: #b2d8eb;
+    text-align: center;
+  }
+  
+  .courses-offered h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #333333;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .course-card {
+    background-color: rgb(227, 196, 228);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(71, 79, 3, 0.996);
+    font-size: 17px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+  
+ /* Chairman Journey */
+.chairman-journey {
+  padding: 70px 40px;
+  background: linear-gradient(to bottom right, #d79090, #f9f9f9);
+  text-align: center;
+}
+
+.chairman-journey h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #9d1717;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.chairman-journey h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #1dc043;
+  display: block;
+  margin: 12px auto 0 auto;
+  border-radius: 5px;
+}
+
+.chairman-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image Hover */
+.chairman-img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(112, 212, 18, 0.61);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.chairman-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(76, 175, 80, 0.4);
+}
+
+/* Details Hover Wrapper */
+.chairman-details {
+  max-width: 680px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 12px;
+  transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chairman-details:hover {
+  background-color: #ffe5c4;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.chairman-details h3 {
+  font-size: 30px;
+  color: #cf6406;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.chairman-details p {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+
+
+  .footer {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+    margin-top: 50px;
+  }
+  .footer p {
+    margin: 0;
+  }
+ 
+  nav a.active-link {
+    color: #007BFF;
+    font-weight: bold;
+    border-bottom: 2px solid #007BFF;
+  }
+  
+
+
+  

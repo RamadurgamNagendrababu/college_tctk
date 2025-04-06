@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission - College Name</title>
+  <link rel="stylesheet" href="admission.css" />
+</head>
+<body>
+
+  <div class="admission-container">
+    <h1>Admission Information</h1>
+    <p>
+      Welcome to our college admissions page. We are excited to help you begin your academic journey!
+      Our admission process is designed to be student-friendly and inclusive. Please review the following
+      details and fill out the form below to apply.
+    </p>
+
+    <form class="admission-form">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <select id="course" required>
+        <option value="">-- Select Course --</option>
+        <option value="BTech">B.Tech</option>
+        <option value="MBA">MBA</option>
+        <option value="BSc">B.Sc</option>
+        <option value="BA">BA</option>
+        <option value="MTech">M.Tech</option>
+      </select>
+      <textarea id="message" rows="4" placeholder="Any message or query?"></textarea>
+      <button type="submit">Apply Now</button>
+    </form>
+
+    <p class="success-message"></p>
+  </div>
+
+  <script src="admission.js"></script>
+</body>
+</html>

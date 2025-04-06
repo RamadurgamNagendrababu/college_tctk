@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e2f;
+    color: #ffffff;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #03a9f4;
+    font-size: 2.5rem;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff4081;
+  }
+  
+  .academics-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 60px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  section h2 {
+    color: #ffeb3b;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  
+  ul {
+    padding-left: 25px;
+  }
+  
+  ul li {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #2e2e3e;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+  }
+  
+  .card:hover {
+    background: #42425a;
+    transform: translateY(-5px);
+  }
+  
+  .academic-calendar a {
+    text-decoration: none;
+    color: #03a9f4;
+    font-size: 18px;
+  }
+  
+  .academic-calendar a:hover {
+    text-decoration: underline;
+    color: #29b6f6;
+  }
+  
+  footer {
+    background: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  
+    nav a {
+      display: inline-block;
+      margin: 5px 10px;
+    }
+  }
+  
